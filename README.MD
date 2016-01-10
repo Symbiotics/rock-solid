@@ -8,7 +8,7 @@ Rock solid is a library that adds data driven testing capabilities to BDD style 
 import the keyword you need
 
 #`using`: 
-Used to execute a it or describe block repetitively with different input data
+Used to execute a `it` or `describe` block repetitively with different input data and expected results for each data set
 
 1. `import {using} from 'rock-solid'`
 
