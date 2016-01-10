@@ -1,0 +1,25 @@
+{
+  "name": "rock-solid",
+  "version": "1.0.0",
+  "description": "Rock Solid is a library that adds data driven testing capabilities to BDD style testing frameworks like Jasmine, Mocha etc",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine JASMINE_CONFIG_PATH=tests/support/jasmine.json",
+    "build": "node_modules/.bin/babel languageExtensions/**/* --out-dir dist/ && ./node_modules/.bin/babel index.js  --out-dir dist/"
+  },
+  "keywords": [
+    "data",
+    "driven",
+    "jasmine",
+    "mocha",
+    "testing"
+  ],
+  "author": "Marthinus Engelbrecht",
+  "license": "MIT",
+  "git repository": "https://github.com/marthinus-engelbrecht/variance.git",
+  "devDependencies": {
+    "babel": "^5.8.34",
+    "babel-core": "^5.8.34",
+    "jasmine": "^2.4.1"
+  }
+}
