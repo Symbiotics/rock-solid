@@ -9,18 +9,20 @@ import the keyword you need
 
 #`using`: 
 Used to execute a it or describe block repetitively with different input data
+
 1. `import {using} from 'rock-solid'`
+
 2. Wrap either a `describe` or `it` block in a `using` block:
 
 ```javascript 
 using([{
     input: 'monkey',
     expectedResult: 'I R Baboon'
-}], function(input, expectedResult){
+}], function(animal, expectedSound){
     describe(`when the animal is a ${input} and makeSound() is called`, function() {
         it(`it should make the sound ${expectedResult}`, function() {
-            makeSound();
-            expect(input).toEqual(expectedResult);
+            let actualSound = makeSound();
+            expect(actualSound).toEqual(expectedSound);
         });
     });
 });
