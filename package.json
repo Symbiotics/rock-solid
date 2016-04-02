@@ -1,6 +1,6 @@
 {
   "name": "rock-solid",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Rock Solid is a library that adds data driven testing capabilities to BDD style testing frameworks like Jasmine, Mocha etc",
   "main": "dist/index.js",
   "scripts": {
