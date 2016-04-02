@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jasmine JASMINE_CONFIG_PATH=tests/support/jasmine.json",
-    "build": "node_modules/.bin/babel languageExtensions/**/* --out-dir dist/ && ./node_modules/.bin/babel index.js  --out-dir dist/"
+    "prepublish": "node_modules/.bin/babel languageExtensions/**/* --out-dir dist/ && ./node_modules/.bin/babel index.js  --out-dir dist/"
   },
   "keywords": [
     "data",
